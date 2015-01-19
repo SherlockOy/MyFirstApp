@@ -11,4 +11,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main_activity2">MainActivity2</string>
 
+    <string-array name="drawer_item">
+        <item>Item_01</item>
+        <item>Item_02</item>
+        <item>Item_03</item>
+    </string-array>
+
 </resources>
