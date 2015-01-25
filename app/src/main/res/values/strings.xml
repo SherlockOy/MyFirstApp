@@ -12,9 +12,11 @@
     <string name="title_activity_main_activity2">MainActivity2</string>
 
     <string-array name="drawer_item">
-        <item>Item_01</item>
+        <item>Connection</item>
         <item>Item_02</item>
         <item>Item_03</item>
     </string-array>
+
+    <string name="title_activity_connection">Connection</string>
 
 </resources>
