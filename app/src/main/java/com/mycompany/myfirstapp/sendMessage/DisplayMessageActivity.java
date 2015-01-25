@@ -1,11 +1,12 @@
-package com.mycompany.myfirstapp;
+package com.mycompany.myfirstapp.sendMessage;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.mycompany.myfirstapp.R;
 
 
 public class DisplayMessageActivity extends ActionBarActivity {
@@ -17,7 +18,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
 
         // Get the extra message from the intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(SendMessageActivity.EXTRA_MESSAGE);
 
         // Create the text view
         TextView textView = new TextView(this);

@@ -13,10 +13,14 @@
 
     <string-array name="drawer_item">
         <item>Connection</item>
-        <item>Item_02</item>
-        <item>Item_03</item>
+        <item>SendMessage</item>
+        <item>to be continued...</item>
     </string-array>
 
     <string name="title_activity_connection">Connection</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_sendMessage">SendMessage</string>
+    <!--used in welcome_activity-->
+    <string name="welcome_words">Call out the drawer and navigate to wherever you want.</string>
 
 </resources>
