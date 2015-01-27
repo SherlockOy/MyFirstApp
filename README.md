@@ -18,3 +18,8 @@ Add the NavigateDrawer
 Complete the NavigateDrawer, add the response action to the click
 
 ======================
+2015.1.27
+
+Open and close the drawer with the app ico
+
+======================
