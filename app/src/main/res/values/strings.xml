@@ -22,5 +22,7 @@
     <string name="title_activity_sendMessage">SendMessage</string>
     <!--used in welcome_activity-->
     <string name="welcome_words">Call out the drawer and navigate to wherever you want.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 
 </resources>
