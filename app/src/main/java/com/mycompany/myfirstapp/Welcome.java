@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.mycompany.myfirstapp.Tel.TelActivity;
 import com.mycompany.myfirstapp.connection.Connection;
 import com.mycompany.myfirstapp.sendMessage.SendMessageActivity;
 
@@ -38,8 +39,8 @@ public class Welcome extends ActionBarActivity {
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
         mDrawerToggle = new ActionBarDrawerToggle(
-                this,                  /* host Activity */
-                mDrawerLayout,         /* DrawerLayout object */
+                this,                      /* host Activity */
+                mDrawerLayout,             /* DrawerLayout object */
                 R.string.drawer_open,  /* "open drawer" description */
                 R.string.drawer_close  /* "close drawer" description */
         ) {
@@ -105,6 +106,9 @@ public class Welcome extends ActionBarActivity {
             case 1:
                 Intent intent_1 = new Intent(Welcome.this, SendMessageActivity.class);
                 startActivity(intent_1);
+            case 2:
+                Intent intent_2 = new Intent(Welcome.this, TelActivity.class);
+                startActivity(intent_2);
             default:
         }
     }

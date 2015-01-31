@@ -14,15 +14,20 @@
     <string-array name="drawer_item">
         <item>Connection</item>
         <item>SendMessage</item>
+        <item>CallPhone</item>
         <item>to be continued...</item>
     </string-array>
 
     <string name="title_activity_connection">Connection</string>
     <string name="title_activity_welcome">Welcome</string>
     <string name="title_activity_sendMessage">SendMessage</string>
-    <!--used in welcome_activity-->
+    <!-- used in welcome_activity -->
     <string name="welcome_words">Call out the drawer and navigate to wherever you want.</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_tel">TelActivity</string>
+    <!-- used in tel_activity-->
+    <string name="tel_hint">Input the number you want to call...</string>
+    <string name="tel_btn">Call</string>
 
 </resources>
