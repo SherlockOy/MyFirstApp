@@ -37,7 +37,9 @@
             android:parentActivityName=".Welcome"></activity>
         <activity
             android:name=".Tel.TelActivity"
-            android:label="@string/title_activity_tel"></activity>
+            android:label="@string/title_activity_tel">
+
+            </activity>
 
 
     </application>
