@@ -106,9 +106,11 @@ public class Welcome extends ActionBarActivity {
             case 1:
                 Intent intent_1 = new Intent(Welcome.this, SendMessageActivity.class);
                 startActivity(intent_1);
+                break;
             case 2:
                 Intent intent_2 = new Intent(Welcome.this, TelActivity.class);
                 startActivity(intent_2);
+                break;
             default:
         }
     }
