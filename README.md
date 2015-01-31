@@ -23,3 +23,8 @@ Complete the NavigateDrawer, add the response action to the click
 Open and close the drawer with the app icon
 
 ======================
+2015.1.31
+
+Add the CallPhone funtion
+
+======================
