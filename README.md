@@ -3,7 +3,9 @@ This is what I tried after reading the android docs from https://developer.andro
 
 Addtional:
 This is just a practical project, not for commercial purpose.
+
 There are some of the functions comes from the examples by itheima.I have no idea about how to deal with the copyright problem, if there are anything inappropriate, please inform me and I will try my best to solve it.
+
 Develop log
 
 ======================
