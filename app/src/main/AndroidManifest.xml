@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mycompany.myfirstapp">
+    package="com.mycompany.myfirstapp" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".Welcome"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +21,7 @@
         </activity>
         <activity
             android:name=".sendMessage.SendMessageActivity"
-            android:label="@string/title_activity_sendMessage">
+            android:label="@string/title_activity_sendMessage" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Welcome" />
@@ -26,7 +29,7 @@
         <activity
             android:name=".sendMessage.DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
-            android:parentActivityName=".sendMessage.SendMessageActivity">
+            android:parentActivityName=".sendMessage.SendMessageActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".sendMessage.SendMessageActivity" />
@@ -34,14 +37,15 @@
         <activity
             android:name=".connection.Connection"
             android:label="@string/title_activity_connection"
-            android:parentActivityName=".Welcome"></activity>
+            android:parentActivityName=".Welcome" />
         <activity
             android:name=".Tel.TelActivity"
-            android:label="@string/title_activity_tel">
-
-            </activity>
-
-
+            android:label="@string/title_activity_tel" >
+        </activity>
+        <activity
+            android:name=".Tel.SMSActivity"
+            android:label="@string/title_activity_sms" >
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+
 </manifest>

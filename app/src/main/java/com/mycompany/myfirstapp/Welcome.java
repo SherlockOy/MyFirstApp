@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.mycompany.myfirstapp.Tel.SMSActivity;
 import com.mycompany.myfirstapp.Tel.TelActivity;
 import com.mycompany.myfirstapp.connection.Connection;
 import com.mycompany.myfirstapp.sendMessage.SendMessageActivity;
@@ -111,7 +112,13 @@ public class Welcome extends ActionBarActivity {
                 Intent intent_2 = new Intent(Welcome.this, TelActivity.class);
                 startActivity(intent_2);
                 break;
+            case 3:
+                Intent intent_3 = new Intent(Welcome.this, SMSActivity.class);
+                startActivity(intent_3);
+                break;
+
             default:
+                break;
         }
     }
 

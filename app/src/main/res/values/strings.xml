@@ -11,13 +11,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main_activity2">MainActivity2</string>
 
+    <!--used in welcome-->
     <string-array name="drawer_item">
         <item>Connection</item>
         <item>SendMessage</item>
         <item>CallPhone</item>
+        <item>SendSMS</item>
         <item>to be continued...</item>
     </string-array>
 
+    <!-- used in Connection-->
     <string name="title_activity_connection">Connection</string>
     <string name="title_activity_welcome">Welcome</string>
     <string name="title_activity_sendMessage">SendMessage</string>
@@ -26,8 +29,14 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_tel">TelActivity</string>
-    <!-- used in tel_activity-->
+    <!-- used in tel_activity -->
     <string name="tel_hint">Input the number you want to call...</string>
     <string name="tel_btn">Call</string>
+    <!-- used in sms_activity-->
+    <string name="title_activity_sms">SMSActivity</string>
+    <string name="btSend">Send</string>
+    <string name="hint_number">Input the number here...</string>
+    <string name="hint_sms">Input the message here...</string>
+
 
 </resources>
