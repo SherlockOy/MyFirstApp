@@ -13,12 +13,42 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.mycompany.myfirstapp.Welcome">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome_words" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:background="@drawable/bg"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:text="@string/welcome_words"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="53dp"
+                android:src="@drawable/home"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
 
     </RelativeLayout>
+
     <ListView
         android:id="@+id/left_drawer"
         android:layout_width="240dp"

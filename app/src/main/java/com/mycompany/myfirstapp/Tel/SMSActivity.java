@@ -44,7 +44,8 @@ public class SMSActivity extends ActionBarActivity implements AdapterView.OnClic
                 // message content
                 String content = mEditTextSms.getText().toString().trim();
                 if (TextUtils.isEmpty(number) || TextUtils.isEmpty(content))
-                    Toast.makeText(this, "phone number or message should not be empty", Toast.LENGTH_LONG);
+                    // remember to show
+                    Toast.makeText(SMSActivity.this, "phone number or message should not be empty", Toast.LENGTH_LONG).show();
                 else {
                     SmsManager smsManager = SmsManager.getDefault();
                     ArrayList<String> contents = smsManager.divideMessage(content);

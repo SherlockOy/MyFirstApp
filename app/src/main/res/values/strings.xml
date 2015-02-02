@@ -27,6 +27,7 @@
 
     <!-- used in welcome_activity -->
     <string name="welcome_words">Call out the drawer and navigate to the function you want.</string>
+    <string name="welcome_words_zh">点击左上角的图标，调出菜单栏，选择您想使用的功能。</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_tel">TelActivity</string>
