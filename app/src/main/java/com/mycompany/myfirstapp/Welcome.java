@@ -16,18 +16,25 @@ import android.widget.ListView;
 import com.mycompany.myfirstapp.Tel.SMSActivity;
 import com.mycompany.myfirstapp.Tel.TelActivity;
 import com.mycompany.myfirstapp.connection.Connection;
+import com.mycompany.myfirstapp.drawer.CustomDrawerAdapter;
+import com.mycompany.myfirstapp.drawer.DrawerItem;
 import com.mycompany.myfirstapp.sendMessage.SendMessageActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Welcome extends ActionBarActivity {
 
-    private String[] mDrawerItems;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
 
     private CharSequence mTitle;
     private CharSequence mDrawerTitle;
+    CustomDrawerAdapter adapter;
+
+    List<DrawerItem> dataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +42,22 @@ public class Welcome extends ActionBarActivity {
         setContentView(R.layout.activity_welcome);
 
         mTitle = mDrawerTitle = getTitle();
-        mDrawerItems = getResources().getStringArray(R.array.drawer_item);
+
+        dataList = new ArrayList<DrawerItem>();
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
+
+        // Add Drawer Item to dataList
+        dataList.add(new DrawerItem(true,R.drawable.bg_drawer));
+        dataList.add(new DrawerItem("Not implemented..."));
+        dataList.add(new DrawerItem("Connection", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Finished"));
+        dataList.add(new DrawerItem("SendMessage", R.drawable.ic_drawer));
+        dataList.add(new DrawerItem("CallPhone", R.drawable.ic_action_call));
+        dataList.add(new DrawerItem("SendSMS", R.drawable.ic_action_email));
+        dataList.add(new DrawerItem("to be continued..."));
+
+
 
         mDrawerToggle = new ActionBarDrawerToggle(
                 this,                      /* host Activity */
@@ -67,8 +87,11 @@ public class Welcome extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        // set the value of adapter
+        adapter = new CustomDrawerAdapter(this, R.layout.drawer_list_item, dataList);
+
         // Set the adapter for the list view
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mDrawerItems));
+        mDrawerList.setAdapter(adapter);
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
     }
@@ -100,19 +123,19 @@ public class Welcome extends ActionBarActivity {
     private void selectItem(int position) {
         // to turn to each corresponding activity
         switch (position) {
-            case 0:
+            case 2:
                 Intent intent_0 = new Intent(Welcome.this, Connection.class);
                 startActivity(intent_0);
                 break;
-            case 1:
+            case 3:
                 Intent intent_1 = new Intent(Welcome.this, SendMessageActivity.class);
                 startActivity(intent_1);
                 break;
-            case 2:
+            case 4:
                 Intent intent_2 = new Intent(Welcome.this, TelActivity.class);
                 startActivity(intent_2);
                 break;
-            case 3:
+            case 5:
                 Intent intent_3 = new Intent(Welcome.this, SMSActivity.class);
                 startActivity(intent_3);
                 break;

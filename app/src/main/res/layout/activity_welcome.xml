@@ -63,10 +63,10 @@
 
     <ListView
         android:id="@+id/left_drawer"
-        android:layout_width="280dp"
+        android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#bb9c9c9c"
+        android:background="#ffffffff"
         android:choiceMode="singleChoice"
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp" />

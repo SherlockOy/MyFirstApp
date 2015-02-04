@@ -64,7 +64,8 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
             drawerHolder.headerLayout.setVisibility(LinearLayout.INVISIBLE);
             drawerHolder.itemLayout.setVisibility(LinearLayout.INVISIBLE);
             drawerHolder.coverLayout.setVisibility(LinearLayout.VISIBLE);
-            drawerHolder.coverPic.setImageDrawable(view.getResources().getDrawable(drawerItem.getCoverPicID()));
+//            drawerHolder.coverPic.setImageDrawable(view.getResources().getDrawable(drawerItem.getCoverPicID()));
+            drawerHolder.coverLayout.setBackground(view.getResources().getDrawable(drawerItem.getCoverPicID()));
         } else if (drawerItem.getTitle() != null) {
 
             // to set the item of header
