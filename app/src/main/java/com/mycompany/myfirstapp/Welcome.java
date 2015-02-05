@@ -92,7 +92,6 @@ public class Welcome extends ActionBarActivity {
         // Set the adapter for the list view
         mDrawerList.setAdapter(adapter);
 
-
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
@@ -115,6 +114,7 @@ public class Welcome extends ActionBarActivity {
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView parent, View view, int position, long id) {
+
             selectItem(position);
         }
     }
@@ -129,15 +129,15 @@ public class Welcome extends ActionBarActivity {
                 Intent intent_0 = new Intent(Welcome.this, Connection.class);
                 startActivity(intent_0);
                 break;
-            case 3:
+            case 4:
                 Intent intent_1 = new Intent(Welcome.this, SendMessageActivity.class);
                 startActivity(intent_1);
                 break;
-            case 4:
+            case 5:
                 Intent intent_2 = new Intent(Welcome.this, TelActivity.class);
                 startActivity(intent_2);
                 break;
-            case 5:
+            case 6:
                 Intent intent_3 = new Intent(Welcome.this, SMSActivity.class);
                 startActivity(intent_3);
                 break;
