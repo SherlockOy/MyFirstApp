@@ -48,15 +48,14 @@ public class Welcome extends ActionBarActivity {
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
         // Add Drawer Item to dataList
-        dataList.add(new DrawerItem(true,R.drawable.bg_drawer));
+        dataList.add(new DrawerItem(true, R.drawable.bg_drawer));
         dataList.add(new DrawerItem("Not implemented..."));
-        dataList.add(new DrawerItem("Connection", R.drawable.ic_launcher));
-        dataList.add(new DrawerItem("Finished"));
-        dataList.add(new DrawerItem("SendMessage", R.drawable.ic_drawer));
-        dataList.add(new DrawerItem("CallPhone", R.drawable.ic_action_call));
-        dataList.add(new DrawerItem("SendSMS", R.drawable.ic_action_email));
-        dataList.add(new DrawerItem("to be continued..."));
-
+        dataList.add(new DrawerItem("Connection", R.drawable.ic_action_web_site));
+        dataList.add(new DrawerItem("Already Finished..."));
+        dataList.add(new DrawerItem("To Next", R.drawable.ic_action_forward));
+        dataList.add(new DrawerItem("Call Phone", R.drawable.ic_action_call));
+        dataList.add(new DrawerItem("Send SMS", R.drawable.ic_action_email));
+        dataList.add(new DrawerItem("To be continued..."));
 
 
         mDrawerToggle = new ActionBarDrawerToggle(
@@ -170,7 +169,8 @@ public class Welcome extends ActionBarActivity {
         // Handle your other action bar items...
 
         if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;}
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

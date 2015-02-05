@@ -21,41 +21,52 @@
     <LinearLayout
         android:id="@+id/header_layout"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
         android:clickable="false"
         android:focusable="false"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <TextView
             android:id="@+id/drawer_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textColor="#54000000"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/item_layout"
         android:layout_width="fill_parent"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:orientation="horizontal">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp">
 
             <ImageView
                 android:id="@+id/drawer_icon"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp" />
 
             <TextView
                 android:id="@+id/drawer_itemName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-        </LinearLayout>
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:textColor="#87000000"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
     </LinearLayout>
 </RelativeLayout>
