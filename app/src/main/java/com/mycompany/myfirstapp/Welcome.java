@@ -92,8 +92,11 @@ public class Welcome extends ActionBarActivity {
 
         // Set the adapter for the list view
         mDrawerList.setAdapter(adapter);
+
+
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+
     }
 
     @Override

@@ -61,23 +61,25 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
         if (drawerItem.isCoverPic()) {
 
             // to set the item of cover picture
-            drawerHolder.headerLayout.setVisibility(LinearLayout.INVISIBLE);
-            drawerHolder.itemLayout.setVisibility(LinearLayout.INVISIBLE);
+            drawerHolder.headerLayout.setVisibility(LinearLayout.GONE);
+            drawerHolder.itemLayout.setVisibility(LinearLayout.GONE);
             drawerHolder.coverLayout.setVisibility(LinearLayout.VISIBLE);
 //            drawerHolder.coverPic.setImageDrawable(view.getResources().getDrawable(drawerItem.getCoverPicID()));
             drawerHolder.coverLayout.setBackground(view.getResources().getDrawable(drawerItem.getCoverPicID()));
+
+
         } else if (drawerItem.getTitle() != null) {
 
             // to set the item of header
-            drawerHolder.itemLayout.setVisibility(LinearLayout.INVISIBLE);
-            drawerHolder.coverLayout.setVisibility(LinearLayout.INVISIBLE);
+            drawerHolder.itemLayout.setVisibility(LinearLayout.GONE);
+            drawerHolder.coverLayout.setVisibility(LinearLayout.GONE);
             drawerHolder.headerLayout.setVisibility(LinearLayout.VISIBLE);
             drawerHolder.title.setText(drawerItem.getTitle());
         } else {
 
             // to set the normal items
-            drawerHolder.headerLayout.setVisibility(LinearLayout.INVISIBLE);
-            drawerHolder.coverLayout.setVisibility(LinearLayout.INVISIBLE);
+            drawerHolder.headerLayout.setVisibility(LinearLayout.GONE);
+            drawerHolder.coverLayout.setVisibility(LinearLayout.GONE);
             drawerHolder.itemLayout.setVisibility(LinearLayout.VISIBLE);
             drawerHolder.icon.setImageDrawable(view.getResources().getDrawable(drawerItem.getImgResID()));
             drawerHolder.itemName.setText(drawerItem.getItemName());
