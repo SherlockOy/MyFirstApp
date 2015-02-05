@@ -45,11 +45,13 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
             view = inflater.inflate(layoutResID, parent, false);
             drawerHolder.itemName = (TextView) view.findViewById(R.id.drawer_itemName);
             drawerHolder.title = (TextView) view.findViewById(R.id.drawer_title);
+            drawerHolder.divider = view.findViewById(R.id.drawer_divider);
             drawerHolder.icon = (ImageView) view.findViewById(R.id.drawer_icon);
             drawerHolder.coverPic = (ImageView) view.findViewById(R.id.drawer_cover_pic);
             drawerHolder.coverLayout = (LinearLayout) view.findViewById(R.id.cover_layout);
             drawerHolder.headerLayout = (LinearLayout) view.findViewById(R.id.header_layout);
             drawerHolder.itemLayout = (LinearLayout) view.findViewById(R.id.item_layout);
+
 
             view.setTag(drawerHolder);
         } else {
@@ -89,6 +91,7 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 
     private static class DrawerItemHolder {
         TextView itemName, title;
+        View divider;
         ImageView icon;
         ImageView coverPic;
         LinearLayout coverLayout, headerLayout, itemLayout;

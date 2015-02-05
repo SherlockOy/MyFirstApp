@@ -48,7 +48,7 @@ public class Welcome extends ActionBarActivity {
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
         // Add Drawer Item to dataList
-        dataList.add(new DrawerItem(true, R.drawable.bg_drawer));
+        dataList.add(new DrawerItem(true, R.drawable.bg_blue));
         dataList.add(new DrawerItem("Not implemented..."));
         dataList.add(new DrawerItem("Connection", R.drawable.ic_action_web_site));
         dataList.add(new DrawerItem("Already Finished..."));
