@@ -76,7 +76,6 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
             drawerHolder.itemLayout.setVisibility(LinearLayout.GONE);
             drawerHolder.coverLayout.setVisibility(LinearLayout.GONE);
             drawerHolder.headerLayout.setVisibility(LinearLayout.VISIBLE);
-            drawerHolder.headerLayout.setFocusable(false);
             drawerHolder.title.setText(drawerItem.getTitle());
 
             // to let the header not clickable, too hard to find the solution...
